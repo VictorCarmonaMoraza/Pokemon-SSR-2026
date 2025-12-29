@@ -1,7 +1,46 @@
+<!--
+text-white
+Establece el color del texto en blanco (color: #ffffff).
+
+gap-4
+Define un espacio de 1rem (16px) entre los elementos hijos cuando se usa flex o grid.
+
+top-0
+Posiciona el elemento en la parte superior (top: 0).
+⚠️ Solo funciona porque el elemento es absolute.
+
+absolute
+Aplica position: absolute.
+El <nav> se posiciona respecto al primer ancestro con position: relative (o al viewport si no existe).
+
+z-50
+Asigna un z-index: 50, asegurando que el <nav> quede por encima de otros elementos.
+
+w-full
+Establece el ancho al 100% del contenedor (width: 100%).
+
+flex
+Convierte el <nav> en un contenedor flexbox.
+
+justify-end
+Alinea los elementos hijos al final del eje principal (a la derecha, por defecto).
+
+px-2
+Añade padding horizontal (padding-left y padding-right) de 0.5rem (8px).
+
+py-3
+Añade padding vertical (padding-top y padding-bottom) de 0.75rem (12px).
+
+bg-slate-900
+Establece el color de fondo slate-900 (muy oscuro, casi negro).
+
+shadow-md
+Aplica una sombra media, dando sensación de elevación sobre el contenido.
+-->
 <nav class=" text-white gap-4 top-0 absolute z-50 w-full flex justify-end px-2 py-3 bg-slate-900 shadow-md">
 
-  <a class="hover:underline" routerLink="/about">About</a>
-  <a class="hover:underline" routerLink="/pricing">Pricing</a>
-  <a class="hover:underline" routerLink="/contact">Contact</a>
+  <a class="hover:underline" routerLinkActive="text-blue-500 underline" routerLink="/about">About</a>
+  <a class="hover:underline" routerLinkActive="text-blue-500 underline" routerLink="/pricing">Pricing</a>
+  <a class="hover:underline" routerLinkActive="text-blue-500 underline" routerLink="/contact">Contact</a>
 
 </nav>
