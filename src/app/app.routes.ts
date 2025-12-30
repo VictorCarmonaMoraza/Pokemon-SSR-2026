@@ -8,7 +8,8 @@ export const routes: Routes = [
   },
   {
     path: 'pokemons',
-    loadComponent: () => import('./pages/pokemons-page/pokemons-page')
+    loadComponent: () => import('./pages/pokemons-page/pokemons-page'),
+    title: 'Pokemons'
   },
   {
     path: 'pricing',
