@@ -1,0 +1,39 @@
+<!--
+grid: Convierte el elemento en un contenedor CSS Grid (display: grid).
+gap-3: Define el espacio entre filas y columnas del grid.
+-Valor: 0.75rem (12px)
+-Aplica tanto a row-gap como a column-gap
+grid-cols-1: Define 1 columna por defecto (pantallas pequeñas / mobile-first).
+sm:grid-cols-3: A partir del breakpoint sm (≥ 640px):
+-El grid pasa a tener 3 columnas
+md:grid-cols-5: A partir del breakpoint md (≥ 768px):
+El grid pasa a tener 5 columnas
+-->
+<div class="grid gap-3 grid-cols-1 sm:grid-cols-3 md:grid-cols-5">
+
+  <!---12-->
+  @for( pokemon of '123456789012'.split(''); track $index){
+  <!--PokemonCard-->
+  <app-pokemon-card />
+  }
+
+
+  <!--TODO: Si no hay-->
+  <!--Si no hay pokenmo-->
+  <!--
+col-span-5: En un CSS Grid, hace que el elemento ocupe 5 columnas.
+Solo tiene efecto si el contenedor padre usa grid y tiene ≥ 5 columnas.
+text-center: Centra el texto horizontalmente dentro del elemento.
+border-white: Define el color del borde como blanco.
+No muestra borde por sí sola; necesita border, border-2, etc.
+h-28: Establece una altura fija de 7rem (112px).
+flex: Convierte el elemento en un contenedor Flexbox.
+justify-center: Centra el contenido horizontalmente dentro del contenedor flex.
+items-center: Centra el contenido verticalmente dentro del contenedor flex.
+-->
+  <!-- <div class="col-span-5 text-center border-white h-28 flex justify-center items-center">
+    No hay pokemons
+  </div> -->
+
+
+</div>
